@@ -3,29 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Audio Examples</title>
+  <title>Generation examples</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 2rem; }
-    audio { margin: 1rem 0; width: 300px; }
+    body {
+      font-family: sans-serif;
+      text-align: left;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    .audio-pair {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+      flex-wrap: wrap; /* makes it responsive */
+    }
+    .audio-pair h4 {
+      margin: 0;
+      flex: 1;
+      min-width: 150px;
+    }
+    audio {
+      flex: 2;
+      min-width: 250px;
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
-  <h1>🎵 My Audio Examples</h1>
+  <h1>🎵 Audio Examples</h1>
 
-  <div>
-    <h3>Example 1: Ambient Loop</h3>
+
+  <h2>Base2Enc</h2>
+
+  <h2>Piano Generation</h2>
+
+  <div class="audio-pair">
+    <h4>Example 1: Real</h4>
     <audio controls>
-      <source src="audio/ambient.mp3" type="audio/mpeg" />
+      <source src="audio/base/piano/real_Track02002_S01_S04_MIDI.wav" type="audio/wav" />
       Your browser does not support the audio element.
     </audio>
   </div>
 
-  <div>
-    <h3>Example 2: Drum Beat</h3>
+  <div class="audio-pair">
+    <h4>Example 1: Generated</h4>
     <audio controls>
-      <source src="audio/drumbeat.wav" type="audio/wav" />
+      <source src="audio/base/piano/gen_Track02002_S01_S04_MIDI.wav" type="audio/wav" />
       Your browser does not support the audio element.
     </audio>
   </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Real</h4>
+    <audio controls>
+      <source src="audio/base/piano/real_Track01913_S04_S03_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Generated</h4>
+    <audio controls>
+      <source src="audio/base/piano/gen_Track01913_S04_S03_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <h2>Drums Generation</h2>
+
+  <div class="audio-pair">
+    <h4>Example 1: Real</h4>
+    <audio controls>
+      <source src="audio/base/drums/real-Track02002_S02_S09_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 1: Generated</h4>
+    <audio controls>
+      <source src="audio/base/drums/gen-Track02002_S02_S09_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Real</h4>
+    <audio controls>
+      <source src="audio/base/drums/real-Track02046_S08_S03_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Generated</h4>
+    <audio controls>
+      <source src="audio/base/drums/gen-Track02046_S08_S03_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+    <h2>Base2Enc-RT</h2>
+
+  <h2>Bass Generation</h2>
+
+  <div class="audio-pair">
+    <h4>Example 1: Real</h4>
+    <audio controls>
+      <source src="audio/base-rt/bass/real-Track01917_S03_S00_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 1: Generated</h4>
+    <audio controls>
+      <source src="audio/base-rt/bass/gen-Track01917_S03_S00_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Real</h4>
+    <audio controls>
+      <source src="audio/base-rt/bass/real-Track01925_S01_S00_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Generated</h4>
+    <audio controls>
+      <source src="audio/base-rt/bass/gen-Track01925_S01_S00_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <h2>Guitar Generation</h2>
+
+  <div class="audio-pair">
+    <h4>Example 1: Real</h4>
+    <audio controls>
+      <source src="audio/base-rt/guitar/real-Track01967_S04_S00_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 1: Generated</h4>
+    <audio controls>
+      <source src="audio/base-rt/guitar/gen-Track01967_S04_S00_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Real</h4>
+    <audio controls>
+      <source src="audio/base-rt/guitar/real-Track02002_S02_S01_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="audio-pair">
+    <h4>Example 2: Generated</h4>
+    <audio controls>
+      <source src="audio/base-rt/guitar/gen-Track02002_S02_S01_MIDI.wav" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
 </body>
 </html>
